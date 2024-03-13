@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Roblox Game</title>
+</head>
+<body>
+    <button onclick="openRandomGame()">Click here for a random Roblox game</button>
+
+    <script>
+        function openRandomGame() {
+            // Array of Roblox game IDs
+            var games = [
+                "PLACE ID 1",
+                "PLACE ID 2",
+                "PLACE ID 3",
+                // Add more game IDs as needed
+            ];
+
+            // Choose a random game ID
+            var randomIndex = Math.floor(Math.random() * games.length);
+            var randomGameId = games[randomIndex];
+
+            // Redirect to the selected game
+            window.location.href = "https://www.roblox.com/games/" + randomGameId;
+        }
+    </script>
+</body>
+</html>
